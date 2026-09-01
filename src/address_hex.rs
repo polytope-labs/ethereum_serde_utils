@@ -1,3 +1,4 @@
+use alloc::{format, string::{String, ToString}};
 use alloy_primitives::Address;
 use serde::de::Error;
 use serde::{Deserializer, Serializer};
@@ -35,7 +36,7 @@ where
 
 #[cfg(test)]
 mod test {
-    use std::str::FromStr;
+    use core::str::FromStr;
 
     use alloy_primitives::Address;
     use serde::{Deserialize, Serialize};

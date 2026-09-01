@@ -1,8 +1,9 @@
+use alloc::{format, string::{String, ToString}};
 use alloy_primitives::U256;
 use serde::de::Visitor;
 use serde::{de, Deserializer, Serialize, Serializer};
-use std::fmt;
-use std::str::FromStr;
+use core::fmt;
+use core::str::FromStr;
 
 pub fn serialize<S>(num: &U256, serializer: S) -> Result<S::Ok, S::Error>
 where

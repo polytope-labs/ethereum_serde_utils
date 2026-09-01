@@ -2,6 +2,7 @@
 //!
 //! E.g., `[0, 1, 2, 3]` serializes as `"0x00010203"`.
 
+use alloc::{format, string::{String, ToString}};
 use crate::hex::PrefixedHexVisitor;
 use serde::de::Error;
 use serde::{Deserializer, Serializer};

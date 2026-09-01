@@ -1,3 +1,4 @@
+use alloc::{format, string::{String, ToString}};
 use alloy_primitives::B256;
 use serde::de::Error;
 use serde::{Deserializer, Serializer};

@@ -2,6 +2,7 @@
 //!
 //! E.g., `0` serializes as `"0x00000000"`.
 
+use alloc::format;
 use crate::bytes_4_hex;
 use serde::{Deserializer, Serializer};
 
