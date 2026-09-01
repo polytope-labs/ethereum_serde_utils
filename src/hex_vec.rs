@@ -2,6 +2,7 @@
 //!
 //! E.g., `vec![0, 1, 2, 3]` serializes as `"0x00010203"`.
 
+use alloc::{string::{String, ToString}, vec::Vec};
 use crate::hex::PrefixedHexVisitor;
 use serde::{Deserializer, Serializer};
 

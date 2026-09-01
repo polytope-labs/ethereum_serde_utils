@@ -1,7 +1,8 @@
 //! Provides utilities for parsing 0x-prefixed hex strings.
 
+use alloc::{format, string::{String, ToString}, vec::Vec};
 use serde::de::{self, Visitor};
-use std::fmt;
+use core::fmt;
 
 /// Encode `data` as a 0x-prefixed hex string.
 pub fn encode<T: AsRef<[u8]>>(data: T) -> String {
