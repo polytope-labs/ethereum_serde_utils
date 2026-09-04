@@ -1,4 +1,7 @@
-use alloc::{format, string::{String, ToString}};
+use alloc::{
+    format,
+    string::{String, ToString},
+};
 use alloy_primitives::U256;
 use serde::{de, Deserialize, Deserializer, Serialize, Serializer};
 

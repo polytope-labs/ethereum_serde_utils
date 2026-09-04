@@ -4,8 +4,8 @@
 //!
 //! Quotes can be optional during decoding.
 
-use alloc::{string::String, vec::Vec};
 use crate::hex;
+use alloc::{string::String, vec::Vec};
 use serde::ser::SerializeSeq;
 use serde::{de, Deserializer, Serializer};
 

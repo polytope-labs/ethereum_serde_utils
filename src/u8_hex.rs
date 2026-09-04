@@ -2,8 +2,8 @@
 //!
 //! E.g., `0` serializes as `"0x00"`.
 
-use alloc::format;
 use crate::hex::PrefixedHexVisitor;
+use alloc::format;
 use serde::de::Error;
 use serde::{Deserializer, Serializer};
 
