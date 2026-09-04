@@ -1,4 +1,7 @@
-use alloc::{format, string::{String, ToString}};
+use alloc::{
+    format,
+    string::{String, ToString},
+};
 use alloy_primitives::Address;
 use serde::de::Error;
 use serde::{Deserializer, Serializer};

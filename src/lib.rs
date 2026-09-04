@@ -3,7 +3,6 @@
 #[macro_use]
 extern crate alloc;
 
-
 mod quoted_int;
 
 pub mod address_hex;

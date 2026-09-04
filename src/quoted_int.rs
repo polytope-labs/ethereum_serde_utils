@@ -6,10 +6,10 @@
 
 use alloc::format;
 use alloy_primitives::U256;
-use serde::{Deserializer, Serializer};
-use serde_derive::{Deserialize, Serialize};
 use core::convert::TryFrom;
 use core::marker::PhantomData;
+use serde::{Deserializer, Serializer};
+use serde_derive::{Deserialize, Serialize};
 
 macro_rules! define_mod {
     ($int: ty) => {
