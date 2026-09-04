@@ -36,7 +36,7 @@ impl<'de> Visitor<'de> for QuantityVisitor {
             Ok(vec![0])
         } else if stripped.starts_with('0') {
             Err(de::Error::custom("cannot have leading zero"))
-        } else if stripped.len() % 2 != 0 {
+        } else if !stripped.len().is_multiple_of(2) {
             hex::decode(format!("0{}", stripped))
                 .map_err(|e| de::Error::custom(format!("invalid hex ({:?})", e)))
         } else {
