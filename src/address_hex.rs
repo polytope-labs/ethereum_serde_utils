@@ -13,7 +13,7 @@ where
     S: Serializer,
 {
     let mut hex_string: String = "0x".to_string();
-    hex_string.push_str(&hex::encode(&address));
+    hex_string.push_str(&hex::encode(address));
 
     serializer.serialize_str(&hex_string)
 }
