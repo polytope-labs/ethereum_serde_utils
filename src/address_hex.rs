@@ -1,3 +1,7 @@
+use alloc::{
+    format,
+    string::{String, ToString},
+};
 use alloy_primitives::Address;
 use serde::de::Error;
 use serde::{Deserializer, Serializer};
@@ -9,7 +13,7 @@ where
     S: Serializer,
 {
     let mut hex_string: String = "0x".to_string();
-    hex_string.push_str(&hex::encode(&address));
+    hex_string.push_str(&hex::encode(address));
 
     serializer.serialize_str(&hex_string)
 }
@@ -35,7 +39,7 @@ where
 
 #[cfg(test)]
 mod test {
-    use std::str::FromStr;
+    use core::str::FromStr;
 
     use alloy_primitives::Address;
     use serde::{Deserialize, Serialize};
